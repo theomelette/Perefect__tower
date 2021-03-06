@@ -1,0 +1,2 @@
+class GraphicsCardsController < ApplicationController
+end
