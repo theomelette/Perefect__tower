@@ -1,0 +1,21 @@
+<h1 class="event-header"> Create A PC </h1>
+<h5 class="event-header2"> <%= link_to @cpu.name, cpus_path(@cpu) %> | <%= link_to @ram.name, rams_path(@ram) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @tower.name, towers_path(@tower) %> </h5>
+
+
+
+<%= form_for @pc do |f| %>
+    <%= f.label :CPU %>
+    <%= f.collection_select :cpu_id, @cpu, :id, :name %>
+    <%= f.label :Graphic_Card %>
+    <%= f.collection_select :graphics_card_id, @graphics_card, :id, :model %>
+    <%= f.label :RAM %>
+    <%= f.collection_select :ram_id, @ram, :id, :brand %>
+    <%= f.label :Tower %>
+    <%= f.collection_select :tower_id, @tower, :id, :brand %>
+    <%= f.label :Name %>
+    <%= f.text_field :name %>
+
+    <%= f.submit %>
+<% end %>    
+
+

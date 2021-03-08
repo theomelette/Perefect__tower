@@ -1,3 +1,26 @@
 // Place all the styles related to the Towers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.event-header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 110px;
+    text-transform: uppercase;
+   
+}
+
+.event-header2 {
+    text-align: center;
+
+}
+
+body {
+
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: rgb(191, 188, 188);
+    font-size: 35px;
+    background: url(https://images.idgesg.net/images/article/2019/07/dsc04685_final-100802535-large.jpg) #ac9a9a78;
+    background-position: top;
+}

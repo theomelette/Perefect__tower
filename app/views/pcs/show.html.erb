@@ -1,0 +1,19 @@
+<h1 class="event-header"> PC Details:</h1>
+<h5 class="event-header2"> <%= link_to @cpu.name, cpus_path(@cpu) %> | <%= link_to @ram.name, rams_path(@ram) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @tower.name, towers_path(@tower) %> </h5>
+
+
+<h2> PC: <%= @pc.name %> </h2>
+<p> Cpu: <%= @pc.cpu.brand %> </p>
+<p> GraphicsCard: <%= @pc.graphics_card.model %> </p>
+<p> Ram: <%= @pc.ram.brand %> </p>
+<p> Tower: <%= @pc.tower.brand %> </p>
+
+
+
+<%= button_to "EditPC", edit_pc_path(@pc), :method => :get %>
+<%= button_to "Remove", @pc, method: "delete" %>
+
+ 
+
+<img src="<%= @pc.tower.img_url %>" >
+

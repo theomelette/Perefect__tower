@@ -1,10 +1,15 @@
 Pc.destroy_all
+Pc.reset_pk_sequence
 Cpu.destroy_all
+Cpu.reset_pk_sequence
 Ram.destroy_all
+Ram.reset_pk_sequence
 Tower.destroy_all
+Tower.reset_pk_sequence
 GraphicsCard.destroy_all
+GraphicsCard.reset_pk_sequence
 
-cpu1 = Cpu.create!(name: "Ryzen 5 5600X", brand: "AMD", img_url: "https://cdn.mos.cms.futurecdn.net/Ez2oCy4jPEQTUQn5mx3D2i-970-80.jpg.webp")
+cpu1 = Cpu.create!(name: "Ryzen 5 5600X", brand: "AMD", img_url: "https://cdn.mos.cms.futurecdn.net/Ez2oCy4jPEQTUQn5mx3D2i-970-80.jpg")
 cpu2 = Cpu.create!(name: "Core i5-10600K", brand: "Intel", img_url: "https://cdn.mos.cms.futurecdn.net/QBah5JuQjwzJFNEcAzxij5-970-80.jpg")
 cpu3 = Cpu.create!(name: "Ryzen 9 9550X", brand: "AMD", img_url: "https://cdn.mos.cms.futurecdn.net/qwEdsWJXs7RK4ipEyhJHk6-970-80.png")
 cpu4 = Cpu.create!(name: "Core i7-10700k", brand: "Intel", img_url: "https://cdn.mos.cms.futurecdn.net/9cLi3wyqJUHQNESXUMmEB4-970-80.jpg.webp")
@@ -13,7 +18,7 @@ cpu6 = Cpu.create!(name: "Ryzen 5 3600X", brand: "AMD", img_url: "https://cdn.mo
 cpu7 = Cpu.create!(name: "Ryzen 3 3300", brand: "AMD", img_url: "https://cdn.mos.cms.futurecdn.net/9iNrdwBJ3TFFVLGNEuG6T-970-80.jpg")
 cpu8 = Cpu.create!(name: "Ryzen 5 3400g", brand: "AMD", img_url: "https://cdn.mos.cms.futurecdn.net/kDXHcmrBU3LbPYS7GjiEhk-970-80.jpg")
 
-ram1 = Ram.create!(brand: "Corsair Vengance LED", speed: 3200, img_url: "https://cdn.mos.cms.futurecdn.net/SWkrDZbyjj7EsW8mBLhpHT-970-80.jpg.webp")
+ram1 = Ram.create!(brand: "Corsair Vengance LED", speed: 3200, img_url: "https://cdn.mos.cms.futurecdn.net/SWkrDZbyjj7EsW8mBLhpHT-970-80.jpg")
 ram2 = Ram.create!(brand: "G.Skill TridentZ RGB", speed: 3200, img_url: "https://cdn.mos.cms.futurecdn.net/Vqoha9GFY6krezcWbon7oa-970-80.jpg.webp")
 ram3 = Ram.create!(brand: "Kingston HyperX Predator", speed: 4600, img_url: "https://cdn.mos.cms.futurecdn.net/Gjnwh5NDUiqkL6RM6EXt2R-970-80.jpg.webp")
 ram4 = Ram.create!(brand: "Kingston HyperX Fury", speed: 3733, img_url: "https://cdn.mos.cms.futurecdn.net/AzZwmE54LL8jEvJYiVJkrd-970-80.jpg.webp")
@@ -52,7 +57,7 @@ graphics_card10 = GraphicsCard.create!(brand: "GeForce", model: "GTX 1650 Super"
 pc1 = Pc.create!(cpu_id: cpu5.id, ram_id: ram3.id, graphics_card_id: graphics_card2.id, tower_id: tower2.id, name: "Amit's PC", img_url: "https://cdn.mos.cms.futurecdn.net/JXVyC3Q8X726Rtd6E4VSuT-970-80.jpg")
 pc2 = Pc.create!(tower_id: tower9.id, graphics_card_id: graphics_card6.id, cpu_id: cpu2.id, ram_id: ram6.id, name: "Blackz 720 PC", img_url: "https://cdn.mos.cms.futurecdn.net/DbUB7qnUoQN5ny6qgxrCj5-970-80.jpg")
 pc3 = Pc.create!(tower_id: tower10.id, graphics_card_id: graphics_card7.id, cpu_id: cpu8.id, ram_id: ram3.id, name: "ComForce 9", img_url: "https://cdn.mos.cms.futurecdn.net/mMKHctJysrwqEVUKYPpQpX-970-80.jpg")
-pc4 = Pc.create!(tower_id: tower6.id, graphics_card_id: graphics_card1.id, cpu_id: cpu3.id, ram_id: ram4.id, name: "Quiet Storm", img_url: "hhttps://cdn.mos.cms.futurecdn.net/k8qUiFBdSVzCxjhMsc7Tz8-970-80.png")
+pc4 = Pc.create!(tower_id: tower6.id, graphics_card_id: graphics_card1.id, cpu_id: cpu3.id, ram_id: ram4.id, name: "Quiet Storm", img_url: "https://cdn.mos.cms.futurecdn.net/k8qUiFBdSVzCxjhMsc7Tz8-970-80.png")
 pc5 = Pc.create!(tower_id: tower3.id, graphics_card_id: graphics_card5.id, cpu_id: cpu7.id, ram_id: ram1.id, name: "Valley 5", img_url: "https://cdn.mos.cms.futurecdn.net/HzcNrnY27Da3mRb5C48Zf8-970-80.jpg")
 
 puts "Information Seeded"

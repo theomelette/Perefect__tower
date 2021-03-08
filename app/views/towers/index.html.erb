@@ -1,7 +1,13 @@
-<h1 class="event-header"> Tower Details:</h1>
+<h1 class=event-header > All Towers </h1>
 <h5 class="event-header2"> <%= link_to @cpu.name, cpus_path(@cpu) %> | <%= link_to @ram.name, rams_path(@ram) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @pc.name, pcs_path(@pc) %> </h5>
 
-<p>Brand: <%= @tower.brand %></p>
-<p>Form Factor: <%= @tower.size%></p>
 
-<img src="<%= @tower.img_url %>" >
+  <% @towers.each do |tower| %>
+    <br>
+      <%= link_to tower.brand, tower %>
+    </br>
+  <% end %>
+
+
+  
+  
