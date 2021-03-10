@@ -42,6 +42,7 @@ tower7 = Tower.create!(brand: "Phanteks Evolv Shift 2", size: "Small", img_url: 
 tower8 = Tower.create!(brand: "CoolerMaster Cosmos C700M", size: "Large", img_url: "https://cdn.mos.cms.futurecdn.net/bQaP3ykJSZGwx2ey2nRynX-970-80.jpg")
 tower9 = Tower.create!(brand: "Be Quiet! Dark Base 700", size: "Medium", img_url: "https://cdn.mos.cms.futurecdn.net/DbUB7qnUoQN5ny6qgxrCj5-970-80.jpg")
 tower10 = Tower.create!(brand: "Phanteks Enthoo Pro II", size: "Large", img_url: "https://cdn.mos.cms.futurecdn.net/mMKHctJysrwqEVUKYPpQpX-970-80.jpg")
+tower11 = Tower.create!(brand: "Sliger SM580", size: "Small", img_url: "https://i.imgur.com/YNDlF9f.jpg")
 
 graphics_card1 = GraphicsCard.create!(brand: "GeForce", model: "RTX 3080", img_url: "https://cdn.mos.cms.futurecdn.net/66BRyjJSAUfoe2uhwk4Z9B-970-80.jpg", description: "With a 1710MHz boost clock speed to help meet the needs of demanding games.")
 graphics_card2 = GraphicsCard.create!(brand: "Radeon", model: "RX 6800 XT", img_url: "https://cdn.mos.cms.futurecdn.net/BrB9ThYGDdabXitfoCB9kj-970-80.jpg", description: "With a 2285 MHz boost clock speed to help meet the needs of demanding games.")
@@ -54,7 +55,7 @@ graphics_card8 = GraphicsCard.create!(brand: "Radeon", model: "RX 6900 XT", img_
 graphics_card9 = GraphicsCard.create!(brand: "GeForce", model: "GTX 1660 Super", img_url: "https://cdn.mos.cms.futurecdn.net/RVMcQ4hNcPVcEwsxJKncS6-970-80.jpg", description: "With a 1530MHz clock speed and 1830MHz boost clock speed to help meet the needs of demanding games.")
 graphics_card10 = GraphicsCard.create!(brand: "GeForce", model: "GTX 1650 Super", img_url: "https://cdn.mos.cms.futurecdn.net/Fxi9Ds2jbNbaDHNCix8GQe-970-80.jpg", description: "With a 1755MHz boost clock speed to help meet the needs of demanding games.")
 
-pc1 = Pc.create!(cpu_id: cpu5.id, ram_id: ram3.id, graphics_card_id: graphics_card2.id, tower_id: tower2.id, name: "Amit's PC", img_url: "https://cdn.mos.cms.futurecdn.net/JXVyC3Q8X726Rtd6E4VSuT-970-80.jpg")
+pc1 = Pc.create!(cpu_id: cpu5.id, ram_id: ram3.id, graphics_card_id: graphics_card2.id, tower_id: tower11.id, name: "Amit's PC", img_url: "https://cdn.mos.cms.futurecdn.net/JXVyC3Q8X726Rtd6E4VSuT-970-80.jpg")
 pc2 = Pc.create!(tower_id: tower9.id, graphics_card_id: graphics_card6.id, cpu_id: cpu2.id, ram_id: ram6.id, name: "Blackz 720 PC", img_url: "https://cdn.mos.cms.futurecdn.net/DbUB7qnUoQN5ny6qgxrCj5-970-80.jpg")
 pc3 = Pc.create!(tower_id: tower10.id, graphics_card_id: graphics_card7.id, cpu_id: cpu8.id, ram_id: ram3.id, name: "ComForce 9", img_url: "https://cdn.mos.cms.futurecdn.net/mMKHctJysrwqEVUKYPpQpX-970-80.jpg")
 pc4 = Pc.create!(tower_id: tower6.id, graphics_card_id: graphics_card1.id, cpu_id: cpu3.id, ram_id: ram4.id, name: "Quiet Storm", img_url: "https://cdn.mos.cms.futurecdn.net/k8qUiFBdSVzCxjhMsc7Tz8-970-80.png")
