@@ -1,5 +1,5 @@
 <h1 class=event-header > All Towers </h1>
-<h5 class="event-header2"> <%= link_to @cpu.name, cpus_path(@cpu) %> | <%= link_to @ram.name, rams_path(@ram) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @pc.name, pcs_path(@pc) %> </h5>
+<h5 class="event-header2"> <%= link_to @cpu.name.upcase, cpus_path(@cpu) %> | <%= link_to @ram.name.upcase, rams_path(@ram) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @pc.name.upcase, pcs_path(@pc) %> </h5>
 
 
   <% @towers.each do |tower| %>

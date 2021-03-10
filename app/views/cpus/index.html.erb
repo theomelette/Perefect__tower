@@ -1,6 +1,6 @@
 <h1 class="event-header" > CPU's </h1>
 
-<h5 class="event-header2"> <%= link_to @pcs.name, pcs_path(@pcs) %> | <%= link_to @ram.name, rams_path(@ram) %> | <%= link_to @graphics_card.model, graphics_cards_path(@graphics_card) %> | <%= link_to @tower.name, towers_path(@tower) %> </h5>
+<h5 class="event-header2"> <%= link_to @pcs.name.upcase, pcs_path(@pcs) %> | <%= link_to @ram.name.upcase, rams_path(@ram) %> | <%= link_to @graphics_card.model, graphics_cards_path(@graphics_card) %> | <%= link_to @tower.name, towers_path(@tower) %> </h5>
 
 <br>
 </br>

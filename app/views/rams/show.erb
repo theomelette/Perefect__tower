@@ -1,5 +1,5 @@
 <h1 class="event-header"> RAM Details: </h1>
-<h5 class="event-header2"> <%= link_to @cpu.name, cpus_path(@cpu) %> | <%= link_to @pc.name, pcs_path(@pc) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @tower.name, towers_path(@tower) %> </h5>
+<h5 class="event-header2"> <%= link_to @cpu.name.upcase, cpus_path(@cpu) %> | <%= link_to @pc.name.upcase, pcs_path(@pc) %> | <%= link_to @graphics_card.name, graphics_cards_path(@graphics_card) %> | <%= link_to @tower.name, towers_path(@tower) %> </h5>
 
 <p> Brand: <%= @ram.brand %> </p>
 <p> Speed: <%= @ram.speed %> </p>
