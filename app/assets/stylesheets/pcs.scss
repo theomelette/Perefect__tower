@@ -18,9 +18,25 @@
 .container {
 
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    color: rgb(191, 188, 188);
+    color: rgb(140, 140, 140);
     font-size: 35px;
     background: url(https://images.idgesg.net/images/article/2019/07/dsc04685_final-100802535-large.jpg) #00000078;
     background-position: top;
 }  
+
+.center{
+    position: absolute;
+    margin: auto;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+  }
+
+a:visited {
+    color: rgb(136, 136, 136);
+  }
 
