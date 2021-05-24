@@ -1,24 +1,7 @@
-# README
+A website built on Ruby that lets a user look at common PC parts for building a custom PC. The user can compile a list of parts on one page.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run ```bundle install``` to install gems and dependencies.
 
-Things you may want to cover:
+Run ```rake db:create && rake db:migrate``` to migrate the database.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Runs ```rails s``` to start the Rails server at ```localhost:3000```
